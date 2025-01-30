@@ -1,5 +1,4 @@
 from sqlalchemy import select
-from sqlalchemy.exc import SQLAlchemyError
 
 from mailings.dao.base import BaseDAO
 from mailings.database import async_session_maker

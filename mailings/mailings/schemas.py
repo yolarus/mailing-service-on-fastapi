@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field, field_validator
+
 from mailings.mailings.services import validate_email_or_tg_chat_id
 
 
@@ -8,6 +9,7 @@ class SMailingAdd(BaseModel):
     """
     message: str = Field(..., max_length=1024, description="Сообщение")
     recipient: str | list[str] = Field(..., description="Получатели рассылки")
+    delay: int = Field(..., ge=0, le=2, description="Параметр задержки")
 
     @field_validator("recipient")
     @classmethod

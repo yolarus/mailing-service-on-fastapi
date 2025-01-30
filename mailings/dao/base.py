@@ -1,4 +1,5 @@
 from sqlalchemy.exc import SQLAlchemyError
+
 from mailings.database import async_session_maker
 
 

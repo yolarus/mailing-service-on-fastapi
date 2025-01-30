@@ -9,7 +9,7 @@ from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from mailings.database import DATABASE_URL, Base
-from mailings.mailings.models import Message, MessageRecipient, Recipient
+from mailings.mailings.models import Message, MessageRecipient, Recipient  # noqa: ignore E401
 
 sys.path.insert(0, dirname(dirname(abspath(__file__))))
 

@@ -1,4 +1,4 @@
-from sqlalchemy import Text, ForeignKey
+from sqlalchemy import ForeignKey, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from mailings.database import Base, int_pk, str_null_true

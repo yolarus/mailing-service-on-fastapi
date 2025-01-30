@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from mailings.mailings.routes import router as router_mailings
 
+from mailings.mailings.routes import router as router_mailings
 
 app = FastAPI()
 
